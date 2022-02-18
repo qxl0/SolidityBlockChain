@@ -67,3 +67,5 @@ simple_storage = w3.eth.contract(address=tx_recipt.contractAddress, abi=abi)
 # Call -> Simulate making call get a return
 # Transact --> Actually make state change
 print(simple_storage.functions.retrieve().call())
+print(simple_storage.functions.store(15).call())
+print(simple_storage.functions.retrieve().call())

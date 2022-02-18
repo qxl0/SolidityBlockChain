@@ -13,8 +13,9 @@ contract SimpleStorage {
     People[] public peoplelist;
     mapping(string => uint256) public nameToFavoriteNumber;
 
-    function store(uint32 _favoriteNumber) public {
+    function store(uint32 _favoriteNumber) public returns (uint256) {
         favoriteNumber = _favoriteNumber;
+        return _favoriteNumber;
     }
 
     // view, pure
