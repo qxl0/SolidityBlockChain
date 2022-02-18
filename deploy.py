@@ -2,7 +2,9 @@ import json
 from solcx import compile_standard, install_solc
 from web3 import Web3
 import os
+from dotenv import load_dotenv
 
+load_dotenv()  # load env from .env
 install_solc("0.6.0")
 with open("./SimpleStorage.sol", "r") as file:
     simple_storage_file = file.read()
