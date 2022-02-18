@@ -59,4 +59,4 @@ transaction = SimpleStorage.constructor().buildTransaction(
     }
 )
 signed_txn = w3.eth.account.sign_transaction(transaction, private_key=private_key)
-# print(signed_txn)
+print(signed_txn)
