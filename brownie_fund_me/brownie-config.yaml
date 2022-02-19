@@ -9,5 +9,8 @@ dotenv: .env
 networks:
   rinkeby:
     eth_usd_price_feed: "0x8A7537A1Fa49EC906cE9f37563A8AF630e"
+    verify: True
+  developement:
+    verify: False
 wallets:
   from_key: ${PRIVATE_KEY}
