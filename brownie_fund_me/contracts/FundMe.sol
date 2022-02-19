@@ -64,11 +64,11 @@ contract FundMe {
     }
 
     function getEntranceFee() public view returns (uint256) {
-        //minimumUSD
-        uint256 minimumUSD = 50 * 10**18;
+        // mimimumUSD
+        uint256 mimimumUSD = 50 * 10**18;
         uint256 price = getPrice();
         uint256 precision = 1 * 10**18;
-        return (minimumUSD * precision) / price;
+        return (mimimumUSD * precision) / price;
     }
 
     //modifier: https://medium.com/coinmonks/solidity-tutorial-all-about-modifiers-a86cf81c14cb
